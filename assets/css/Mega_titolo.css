@@ -1,10 +1,15 @@
 @media (max-width: 448px) {
   .highlight-blue {
     color: #fff;
-    padding: 35px 0;
-    height: 200px;
+    margin: 20px 10px;
     background: #ffffff;
   }
+}
+
+.highlight-blue {
+  color: #fff;
+  margin: 20px 10px;
+  background: #ffffff;
 }
 
 .highlight-blue p {
@@ -12,8 +17,6 @@
   line-height: 1.5;
   font-size: 19px;
   width: 100%;
-  margin-bottom: 0px;
-  height: 50px;
   min-width: none;
   max-width: none;
 }
