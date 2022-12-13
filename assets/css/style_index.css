@@ -1,0 +1,52 @@
+.main_title {
+  text-align: center;
+}
+
+#main_title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: rgb(79,123,147);
+}
+
+.menu_button {
+  width: 210px;
+  color: #0f475f;
+  margin: 6px;
+  padding: 0px 12px;
+  background: rgba(255,255,255,0);
+  border-color: rgb(12,72,101);
+  border-radius: 25px;
+  box-shadow: 8px 6px #86adbe;
+}
+
+.buttons {
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.menu_button:hover {
+  background-color: #86adbe;
+}
+
+.menu_button:focus {
+  background-color: #487386;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122,153,217)), color-stop(0.72, rgb(73,125,189)), color-stop(0.86, rgb(72,105,206)));
+}
+

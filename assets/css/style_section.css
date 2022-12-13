@@ -1,0 +1,75 @@
+@media (min-width: 800px) {
+  .titolo_sezione {
+    margin-top: 40px;
+    color: rgb(187,46,46);
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 5px;
+    padding-right: 100px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    border-width: 0.5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 799px) {
+  .titolo_sezione {
+    margin-top: 40px;
+    color: rgb(187,46,46);
+    text-align: center;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 0.5px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 800px) {
+  .descrizione {
+    margin-left: 110px;
+    margin-right: 100px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 799px) {
+  .descrizione {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.menu_button {
+  width: 210px;
+  color: #0f475f;
+  margin: 6px;
+  padding: 0px 12px;
+  background: rgba(255,255,255,0);
+  border-color: rgb(12,72,101);
+  border-radius: 25px;
+  box-shadow: 8px 6px #86adbe;
+}
+
+.menu_button:hover {
+  background-color: #86adbe;
+}
+
+.menu_button:focus {
+  background-color: #487386;
+}
+
+.immagine_asse {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
