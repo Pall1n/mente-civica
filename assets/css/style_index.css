@@ -9,7 +9,10 @@
   color: rgb(79,123,147);
 }
 
-.home_button {
+.btn {
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
   width: 210px;
   color: #0f475f;
   margin: 6px;
@@ -20,17 +23,17 @@
   box-shadow: 8px 6px #86adbe;
 }
 
-.buttons {
+#buttonsDiv {
   text-align: center;
   margin-right: 20px;
   margin-left: 20px;
 }
 
-.home_button:hover {
+.btn:hover {
   background-color: #86adbe;
 }
 
-.home_button:focus {
+.btn:focus {
   background-color: #487386;
 }
 
@@ -93,7 +96,7 @@
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  .home_button {
+  .btn {
     width: 300px;
     height: 35px;
   }
