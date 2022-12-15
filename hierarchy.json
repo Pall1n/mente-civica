@@ -1,23 +1,25 @@
 {
     "comunita_energetiche": {
         "name": "Comunità Energetiche",
-        "children": {
-            "parallele_assi": "Parallele assi"
+        "elements": {
+            "cosa_sono": "Cosa sono",
+            "leggi_e_obiettivi": "Leggi e obiettivi",
+            "esempio": "Esempio in Italia"
         }
     },
     "COP": {
         "name": "La COP",
-        "children": {
+        "elements": {
         }
     },
     "energia_rinnovabile": {
         "name": "L'energia rinnovabile",
-        "children": {
+        "elements": {
         }
     },
     "nZEB": {
         "name": "Cos'è un nZEB",
-        "children": {
+        "elements": {
         }
     }
 }
