@@ -5,6 +5,7 @@ function homeClickButton() {
     $(".home_button").off("click");
     $(".home_button").click(function() {
         topic = $(this).attr("id");
+        $("#main_title").empty().append(json[topic]["name"]);
         if(Object.keys(json[topic]["elements"]).length != 0){
             $("#buttonsDiv").empty();
             $("#subtitle").empty().append("Scegli una vista");
@@ -14,14 +15,14 @@ function homeClickButton() {
                 </svg>
             `);
             goHome();
+            $.each(json[topic]["elements"], function(key, value) {
+                $("#buttonsDiv").append('<a id="' + key + '" class="btn view_button" role="button">' + value + '</a>');
+            });
         } else {
             $("#buttonsDiv").empty().append('<a id="goHome" class="btn" role="button">Back</a>');
             goHome();
             $("#subtitle").empty().append("Nessun elemento presente al riguardo");
         }
-        $.each(json[topic]["elements"], function(key, value) {
-            $("#buttonsDiv").append('<a id="' + key + '" class="btn view_button" role="button">' + value + '</a>');
-        });
         viewClickButton();
     });
 }
