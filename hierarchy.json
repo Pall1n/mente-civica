@@ -1,0 +1,26 @@
+{
+    "energia_rinnovabile": {
+        "name": "L'energia rinnovabile",
+        "elements": {
+            "cosa_e": "Cos'è",
+            "tipi": "I principali tipi",
+            "vantaggi": "Vantaggi",
+            "svantaggi": "Svantaggi"
+        }
+    },
+    "comunita_energetiche": {
+        "name": "Le Comunità Energetiche",
+        "elements": {
+            "cosa_sono": "Cosa sono",
+            "leggi_e_obiettivi": "Leggi e obiettivi",
+            "esempio": "Esempio in Italia"
+        }
+    },
+    "nZEB": {
+        "name": "Gli nZEB",
+        "elements": {
+            "cosa_sono": "Cosa sono",
+            "numeri_e_esempio": "Numeri Italia e esempio"
+        }
+    }
+}
