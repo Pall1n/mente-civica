@@ -16,14 +16,11 @@
             "esempio": "Esempio in Italia"
         }
     },
-    "COP": {
-        "name": "La COP",
-        "elements": {
-        }
-    },
     "nZEB": {
         "name": "Gli nZEB",
         "elements": {
+            "cosa_sono": "Cosa sono",
+            "numeri_e_esempio": "Numeri Italia e esempio"
         }
     }
 }
