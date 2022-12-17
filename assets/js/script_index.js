@@ -65,4 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
         json = data;
     });
     AOS.init();
+    console.log("%cMade by Larosa Paolo Maria - Pall1n", "color: #4E82D0; font-size: 20px; font-weight: bold;");
+    console.log("%chttps://github.com/Pall1n", "font-size: 20px; font-weight: bold");
 }, false);

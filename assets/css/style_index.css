@@ -6,7 +6,7 @@
   text-align: center;
   font-size: 30px;
   margin-bottom: 7px;
-  color: rgb(79,123,147);
+  color: rgb(36, 109, 63);
 }
 
 .btn {
@@ -14,13 +14,13 @@
   margin-right: 20px;
   margin-left: 20px;
   width: 210px;
-  color: #0f475f;
+  color: rgb(0, 104, 38);
   margin: 6px;
   padding: 0px 12px;
   background: rgba(255,255,255,0);
-  border-color: rgb(12,72,101);
+  border-color: rgb(36, 109, 63);
   border-radius: 25px;
-  box-shadow: 8px 6px #86adbe;
+  box-shadow: 8px 6px rgba(36, 109, 63, 0.316);
 }
 
 #buttonsDiv {
@@ -30,11 +30,7 @@
 }
 
 .btn:hover {
-  background-color: #86adbe;
-}
-
-.btn:focus {
-  background-color: #487386;
+  background-color: rgba(36, 109, 63, 0.316)
 }
 
 li {
@@ -42,7 +38,7 @@ li {
 }
 
 li::marker {
-  color: rgb(79,123,147);
+  color: rgb(36, 109, 63);
   font-weight: 800;
 }
 
@@ -59,7 +55,7 @@ li::marker {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122,153,217)), color-stop(0.72, rgb(73,125,189)), color-stop(0.86, rgb(72,105,206)));
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(94, 149, 114)), color-stop(0.72, rgb(36, 109, 63)), color-stop(0.86, rgb(0, 118, 43)));
 }
 
 @media (min-width: 900px) {

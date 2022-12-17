@@ -1,6 +1,6 @@
 {
     "energia_rinnovabile": {
-        "name": "L'energia rinnovabile",
+        "name": "Energia rinnovabile",
         "elements": {
             "cosa_e": "Cos'è",
             "tipi": "I principali tipi",
@@ -9,7 +9,7 @@
         }
     },
     "comunita_energetiche": {
-        "name": "Le Comunità Energetiche",
+        "name": "Comunità Energetiche",
         "elements": {
             "cosa_sono": "Cosa sono",
             "leggi_e_obiettivi": "Leggi e obiettivi",
@@ -17,7 +17,7 @@
         }
     },
     "nZEB": {
-        "name": "Gli nZEB",
+        "name": "nZEB",
         "elements": {
             "cosa_sono": "Cosa sono",
             "numeri_e_esempio": "Numeri Italia e esempio"
