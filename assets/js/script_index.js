@@ -5,9 +5,15 @@ function homeClickButton() {
     $(".home_button").off("click");
     $(".home_button").click(function() {
         topic = $(this).attr("id");
-        $("#main_title").empty().append(json[topic]["name"]);
+        if(json[topic]["name"].startsWith("[")) {
+            let name = json[topic]["name"].split("#");
+            $("#main_title").empty().append(name[1]);
+        } else{
+            $("#main_title").empty().append(json[topic]["name"]);
+        }
         if(Object.keys(json[topic]["elements"]).length != 0){
             $("#buttonsDiv").empty();
+            $("#approfondimentiButtonsDiv").empty();
             $("#subtitle").empty().append("Scegli una vista");
             $("#main_title").prepend(`
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="4" stroke="currentColor" id="goHome" role="button" style="width: 20px; height: 20px;">
@@ -42,10 +48,16 @@ function goHome() {
     $("#goHome").off("click");
     $("#goHome").click(function() {
         $("#buttonsDiv").empty();
+        $("#approfondimentiButtonsDiv").empty();
         $("#viewFrame").empty();
         $("#main_title").empty().append("Le energie rinnovabili nel mondo");
         $.each(json, function(key, value) {
-            $("#buttonsDiv").append('<a id="' + key + '" class="btn home_button" role="button">' + value["name"] + '</a>');
+            if(value["name"].startsWith("[")) {
+                let name = value["name"].split("#");
+                $("#approfondimentiButtonsDiv").append('<a id="' + key + '" class="btn home_button" role="button">' + name[0] + '<br>' + name[1] + '</a>');
+            } else{
+                $("#buttonsDiv").append('<a id="' + key + '" class="btn home_button" role="button">' + value["name"] + '</a>');
+            }
             $("#subtitle").empty().append("Scegli l'argomento da approfondire");
         });
         homeClickButton();
@@ -59,7 +71,12 @@ function changeFrame(topic, view) {
 document.addEventListener('DOMContentLoaded', function() {
     json.done(function(data) {
         $.each(data, function(key, value) {
-            $("#buttonsDiv").append('<a id="' + key + '" class="btn home_button" role="button">' + value["name"] + '</a>');
+            if(value["name"].startsWith("[")) {
+                let name = value["name"].split("#");
+                $("#approfondimentiButtonsDiv").append('<a id="' + key + '" class="btn home_button" role="button">' + name[0] + '<br>' + name[1] + '</a>');
+            } else{
+                $("#buttonsDiv").append('<a id="' + key + '" class="btn home_button" role="button">' + value["name"] + '</a>');
+            }
         });
         homeClickButton();
         json = data;

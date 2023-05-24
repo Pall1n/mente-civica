@@ -22,5 +22,19 @@
             "cosa_sono": "Cosa sono",
             "numeri_e_esempio": "Numeri Italia e esempio"
         }
+    },
+    "approfondimento_fonti_rinnovabili": {
+        "name": "[Approfondimento]#Fonti rinnovabili",
+        "elements": {
+            "cosa_sono": "Cosa sono"
+        }
+    },
+    "approfondimento_greta_thumberg": {
+        "name": "[Approfondimento]#Greta Thumberg",
+        "elements": {
+            "chi_e": "Chi è",
+            "fridays_for_future": "Fridays for Future",
+            "greta_all_onu": "Greta all'ONU"
+        }
     }
 }
